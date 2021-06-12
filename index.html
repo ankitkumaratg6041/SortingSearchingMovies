@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Sorting/Searching Movies</title>
+</head>
+<body>
+    <div class="title">
+        <h3>How do you want to sort the table <span id="question">?</span></h3>
+        <p id="hint">Ex: rank/title/id</p>
+    </div>
+    <form class="form-control">
+        <input type="text" id="searchInput" placeholder="Type Here: How do you want to sort??" onkeyup="searchFun()">
+    </form>
+    <div class="final-buttons">
+        <button id="number-submit" type="button">Submit</button>
+    </div>
+    <div class="title">
+        <h3>Type here to search data from the table <span id="question">?</span></h3>
+        <p id="hint">Ex: The Godfather</p>
+    </div>
+    <form class="form-control">
+        <input type="text" id="typeInput" placeholder="Type Here to search data from the table" onkeyup="searchFun()">
+    </form>
+
+    <script src="script.js"></script>
+    <div id="movies-list">
+        <!-- The div element where the movies table will be displayed -->
+    </div>
+
+    
+</body>
+</html>
